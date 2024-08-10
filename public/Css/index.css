@@ -1,0 +1,192 @@
+
+@keyframes available {
+    from{
+        background: rgba(57, 255, 20, 1);
+    }
+    to{
+        background: rgba(57, 255, 20, 0.5);
+    }
+}
+@keyframes flip {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+
+    transform: rotate(180deg);
+    }
+}
+@keyframes unflip {
+    from{
+        transform: rotate(180deg);
+    }
+    to{
+
+    transform: rotate(360deg);
+    }
+}
+@keyframes clicks {
+    from{
+        transform: translateX(4px);
+        background: red
+    }
+    to{
+        transform: translateX(0px);
+        background: rgb(100, 5, 5);
+    }
+}
+body{
+    display: grid;
+    justify-content: center;
+    background-image: url("/Css/images/Bg.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+img{
+    width: 340px;
+    height: 800px;
+}
+.black-square{
+    height: 100px;
+    width: 100px;
+    background:rgba(6, 150, 150, 0.342);
+    border: 1px solid rgba(0,0,0,0.5);
+    transition: border 1s;
+}
+.white-square{
+    height: 100px;
+    width: 100px;
+    border: 1px solid rgba(250,250,250, 250.3);
+    background:rgba(255, 255, 255, 0.623);
+    transition: border 1s;
+}
+.chess-board{
+    animation-name: unflip;
+    animation-duration: 0.7s;
+    height: 820px;
+    width: 820px;
+    border:8px double cyan;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(8, 1fr);
+}
+button{
+    background:rgb(187, 2, 2);
+    border: 3px solid rgb(255, 255, 255);
+    color: white;
+    transition: background 0.5s, border 0.8s, color 0.9s;
+}
+button:hover{
+    cursor: pointer;
+    color: black;
+    border: 3px solid black;
+    background: rgb(99, 11, 11)(116, 23, 23)
+}
+.brook, .wrook, .wpawn,.bpawn,.bbishop,.wbishop,.bqueen,.wqueen, .bking, .wking, .bknight, .wknight{
+    background-position: center;
+}
+.bking{
+    background-image: url("/Css/images/bking.png");
+    background-repeat: no-repeat;
+    background-size: 80px;
+}
+.wking{
+    background-image: url("/Css/images/wking.png");
+    background-repeat: no-repeat;
+    background-size: 80px;
+}
+.brook{
+    background-image: url("/Css/images/brook.png");
+    background-repeat: no-repeat;
+    background-size: 80px;
+}
+.wrook{
+    background-image: url("/Css/images/wrook.png");
+    background-repeat: no-repeat;
+    background-size: 80px;
+}
+.bpawn{
+    background-image: url("/Css/images/bpawn.png");
+    background-repeat: no-repeat;
+    background-size: 65px;
+}
+.wpawn{
+    background-image: url("/Css/images/wpawn.png");
+    background-repeat: no-repeat;
+    background-size: 65px;
+}
+.white-square:hover,.black-square:hover{
+    border: 2px red solid;
+}
+.bbishop{
+    background-image: url("/Css/images/bbishop.png");
+    background-repeat: no-repeat;
+    background-size: 85px;
+}
+.wbishop{
+    background-image: url("/Css/images/wbishop.png");
+    background-repeat: no-repeat;
+    background-size: 85px;
+}
+.wqueen{
+    background-image: url("/Css/images/wqueen.png");
+    background-repeat: no-repeat;
+    background-size: 100px;
+}
+.bqueen{
+    background-image: url("/Css/images/bqueen.png");
+    background-repeat: no-repeat;
+    background-size: 100px;
+}
+.bknight{
+    background-image: url("/Css/images/bknight.png");
+    background-repeat: no-repeat;
+    background-size: 90px;
+}
+.wknight{
+    background-image: url("/Css/images/wknight.png");
+    background-repeat: no-repeat;
+    background-size: 90px;
+}
+.avail{
+    animation-name: available;
+    animation-duration: 2s;
+        background: rgba(57, 255, 20, 0.5);
+}
+.one{
+    display: all;
+}
+.selected{
+    border: red solid 2px;
+}
+.selecting{
+    animation-name: clicks;
+    animation-duration: 0.4s;
+}
+.flip{
+    animation-name: flip;
+    animation-duration: 0.7s;
+    transform: rotate(180deg);
+}
+.simple{
+    transform: rotate(180deg);
+}
+@media only screen and (max-width:780px){
+    .white-square, .black-square{
+        height: 56.4px;
+        width: 56.4px;
+    }
+    .chess-board{
+        grid-template-columns: : 56.4px 56.4px 56.4px 56.4px 56.4px 56.4px 56.4px 56.4px;
+        grid-template-rows: repeat(8, 56.4px);
+    height: 450px;
+    width: 470px;
+    }
+.brook, .wrook,.bbishop,.wbishop,.bqueen,.wqueen, .bking, .wking, .bknight, .wknight{
+    background-size: 40px;
+}
+.bpawn,.wpawn{
+    background-size: 30px;
+}
+}
