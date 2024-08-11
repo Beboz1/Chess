@@ -28,7 +28,10 @@ function queenw3(num){
         if(nums + checker == 8||nums + checker == 16|| nums + checker ==24 || nums + checker ==32 || nums + checker ==40 || nums + checker ==48 || nums + checker == 56||nums+checker == 64){
             if(square[nums + checker].classList.contains("wpawn")
             ||square[nums + checker].classList.contains("wrook")
-            ||square[nums + checker].classList.contains("wbishop")){
+            ||square[nums + checker].classList.contains("wbishop")
+            ||square[nums + checker].classList.contains("wqueen")
+            ||square[nums + checker].classList.contains("wknight")
+            ||square[nums + checker].classList.contains("wking")){
                 i = 8
                 Adder(count)
                 break;
@@ -40,14 +43,20 @@ function queenw3(num){
         }
         if(square[nums + checker].classList.contains("wpawn")
         ||square[nums + checker].classList.contains("wrook")
-        ||square[nums + checker].classList.contains("wbishop")){
+        ||square[nums + checker].classList.contains("wbishop")
+        ||square[nums + checker].classList.contains("wqueen")
+        ||square[nums + checker].classList.contains("wknight")
+        ||square[nums + checker].classList.contains("wking")){
             i = 8
             Adder(count)
             break;
         }
         if(square[nums + checker].classList.contains("bpawn")
         ||square[nums + checker].classList.contains("brook")
-        ||square[nums + checker].classList.contains("bbishop")){
+        ||square[nums + checker].classList.contains("bbishop")
+        ||square[nums + checker].classList.contains("bqueen")
+        ||square[nums + checker].classList.contains("bknight")
+        ||square[nums + checker].classList.contains("bking")){
             count++
             i = 8
             Adder(count)
@@ -68,7 +77,10 @@ function queenw3(num){
         if(nums - checker2 == 7||nums - checker2 == 15|| nums - checker2 ==23|| nums - checker2 ==31|| nums - checker2 ==39|| nums - checker2 ==47|| nums - checker2 == 55){
             if(square[nums - checker2].classList.contains("wpawn")
             ||square[nums - checker2].classList.contains("wrook")
-            ||square[nums - checker2].classList.contains("wbishop")){
+            ||square[nums - checker2].classList.contains("wbishop")
+            ||square[nums - checker2].classList.contains("wqueen")
+            ||square[nums - checker2].classList.contains("wknight")
+            ||square[nums - checker2].classList.contains("wking")){
                 j = 8
                 Adder2(count2)
                 break;
@@ -80,14 +92,20 @@ function queenw3(num){
         }
         if(square[nums - checker2].classList.contains("wpawn")
         ||square[nums - checker2].classList.contains("wrook")
-        ||square[nums - checker2].classList.contains("wbishop")){
+        ||square[nums - checker2].classList.contains("wbishop")
+        ||square[nums - checker2].classList.contains("wqueen")
+        ||square[nums - checker2].classList.contains("wknight")
+        ||square[nums - checker2].classList.contains("wking")){
             j = 8
             Adder2(count2)
             break;
         }
         if(square[nums - checker2].classList.contains("bpawn")
         ||square[nums - checker2].classList.contains("brook")
-        ||square[nums - checker2].classList.contains("bbishop")){
+        ||square[nums - checker2].classList.contains("bbishop")
+        ||square[nums - checker2].classList.contains("bqueen")
+        ||square[nums - checker2].classList.contains("bknight")
+        ||square[nums - checker2].classList.contains("bking")){
             count2++
             j = 8
             Adder2(count2)
@@ -118,7 +136,10 @@ function queenw4(num){
         
         if(square[nums2 + checker].classList.contains("wpawn")
         ||square[nums2 + checker].classList.contains("wrook")
-        ||square[nums2 + checker].classList.contains("wbishop")){
+        ||square[nums2 + checker].classList.contains("wbishop")
+        ||square[nums2 + checker].classList.contains("wqueen")
+        ||square[nums2 + checker].classList.contains("wknight")
+        ||square[nums2 + checker].classList.contains("wking")){
            
             i = 8
             Adder3(count)
@@ -126,7 +147,10 @@ function queenw4(num){
         }
         if(square[nums2 + checker].classList.contains("bpawn")
         ||square[nums2 + checker].classList.contains("brook")
-        ||square[nums2 + checker].classList.contains("bbishop")){
+        ||square[nums2 + checker].classList.contains("bbishop")
+        ||square[nums2 + checker].classList.contains("bqueen")
+        ||square[nums2 + checker].classList.contains("bknight")
+        ||square[nums2 + checker].classList.contains("bking")){
             count++
             i = 8
             Adder3(count)
@@ -146,14 +170,20 @@ function queenw4(num){
         }
         if(square[nums2 - checker2].classList.contains("wpawn")
         ||square[nums2 - checker2].classList.contains("wrook")
-        ||square[nums2 - checker2].classList.contains("wbishop")){
+        ||square[nums2 - checker2].classList.contains("wbishop")
+        ||square[nums2 - checker2].classList.contains("wqueen")
+        ||square[nums2 - checker2].classList.contains("wknight")
+        ||square[nums2 - checker2].classList.contains("wking")){
             j = 8
             Adder4(count2)
             break;
         }
         if(square[nums2 - checker2].classList.contains("bpawn")
         ||square[nums2 - checker2].classList.contains("brook")
-        ||square[nums2 - checker2].classList.contains("bbishop")){
+        ||square[nums2 - checker2].classList.contains("bbishop")
+        ||square[nums2 - checker2].classList.contains("bqueen")
+        ||square[nums2 - checker2].classList.contains("bknight")
+        ||square[nums2 - checker2].classList.contains("bking")){
             count2++
             j = 8
             Adder4(count2)
@@ -210,6 +240,8 @@ function move() {
     square[where].classList.remove("brook")
     square[where].classList.remove("bbishop")
     square[where].classList.remove("bpawn")
+    square[where].classList.remove("bknight")
+    square[where].classList.remove("bking")
     changeTurn("black")
      queen2Debuger2()
      queenDebuger2()

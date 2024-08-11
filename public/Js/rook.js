@@ -1,4 +1,5 @@
 import{square, where, turn, changeTurn}from"./index.js"
+let rookMoves = 0
 let nums = 0
 let nums2 = 0
 function rookDebuger() {
@@ -241,8 +242,9 @@ function move() {
     square[where].classList.remove("wbishop")
     square[where].classList.remove("wpawn")
     square[where].classList.remove("wknight")
+    rookMoves++
     changeTurn("white")
     rookDebuger()
 }
 
-export{rookbh, rookbv, rookDebuger}
+export{rookbh, rookbv, rookDebuger, rookMoves}

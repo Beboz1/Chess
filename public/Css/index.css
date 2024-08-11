@@ -4,7 +4,7 @@
         background: rgba(57, 255, 20, 1);
     }
     to{
-        background: rgba(57, 255, 20, 0.5);
+        border: 2.4px solid rgb(57, 255, 20);
     }
 }
 @keyframes flip {
@@ -38,7 +38,7 @@
 body{
     display: grid;
     justify-content: center;
-    background-image: url("/Css/images/Bg.png");
+    background-image: url("./images/Bg.png");
     background-size: cover;
     background-repeat:no-repeat;
 }
@@ -87,32 +87,32 @@ button:hover{
     background-position: center;
 }
 .bking{
-    background-image: url("/Css/images/bking.png");
+    background-image: url("./images/bking.png");
     background-repeat: no-repeat;
     background-size: 80px;
 }
 .wking{
-    background-image: url("/Css/images/wking.png");
+    background-image: url("./images/wking.png");
     background-repeat: no-repeat;
     background-size: 80px;
 }
 .brook{
-    background-image: url("/Css/images/brook.png");
+    background-image: url("./images/brook.png");
     background-repeat: no-repeat;
     background-size: 80px;
 }
 .wrook{
-    background-image: url("/Css/images/wrook.png");
+    background-image: url("./images/wrook.png");
     background-repeat: no-repeat;
     background-size: 80px;
 }
 .bpawn{
-    background-image: url("/Css/images/bpawn.png");
+    background-image: url("./images/bpawn.png");
     background-repeat: no-repeat;
     background-size: 65px;
 }
 .wpawn{
-    background-image: url("/Css/images/wpawn.png");
+    background-image: url("./images/wpawn.png");
     background-repeat: no-repeat;
     background-size: 65px;
 }
@@ -120,39 +120,39 @@ button:hover{
     border: 2px red solid;
 }
 .bbishop{
-    background-image: url("/Css/images/bbishop.png");
+    background-image: url("./images/bbishop.png");
     background-repeat: no-repeat;
     background-size: 85px;
 }
 .wbishop{
-    background-image: url("/Css/images/wbishop.png");
+    background-image: url("./images/wbishop.png");
     background-repeat: no-repeat;
     background-size: 85px;
 }
 .wqueen{
-    background-image: url("/Css/images/wqueen.png");
+    background-image: url("./images/wqueen.png");
     background-repeat: no-repeat;
     background-size: 100px;
 }
 .bqueen{
-    background-image: url("/Css/images/bqueen.png");
+    background-image: url("./images/bqueen.png");
     background-repeat: no-repeat;
     background-size: 100px;
 }
 .bknight{
-    background-image: url("/Css/images/bknight.png");
+    background-image: url("./images/bknight.png");
     background-repeat: no-repeat;
     background-size: 90px;
 }
 .wknight{
-    background-image: url("/Css/images/wknight.png");
+    background-image: url("./images/wknight.png");
     background-repeat: no-repeat;
     background-size: 90px;
 }
 .avail{
     animation-name: available;
     animation-duration: 2s;
-        background: rgba(57, 255, 20, 0.5);
+        border: 2.5px solid rgb(57, 255, 20);
 }
 .one{
     display: all;

@@ -29,8 +29,11 @@ function bishopw(num){
         }
         if(nums + checker == 7|| nums + checker == 8+ 7||nums + checker == 16+7|| nums + checker ==24 +7|| nums + checker ==32 +7|| nums + checker ==40 +7|| nums + checker ==48 +7|| nums + checker == 56+7){
             if(square[nums + checker].classList.contains("wpawn")
-            ||square[nums + checker].classList.contains("wrook")
-            ||square[nums + checker].classList.contains("wbishop")){
+        ||square[nums + checker].classList.contains("wrook")
+        ||square[nums + checker].classList.contains("wbishop")
+        ||square[nums + checker].classList.contains("wqueen")
+        ||square[nums + checker].classList.contains("wknight")
+        ||square[nums + checker].classList.contains("wking")){
                 i = 8
                 Adder(count)
                 break;
@@ -43,14 +46,20 @@ function bishopw(num){
         }
         if(square[nums + checker].classList.contains("wpawn")
         ||square[nums + checker].classList.contains("wrook")
-        ||square[nums + checker].classList.contains("wbishop")){
+        ||square[nums + checker].classList.contains("wbishop")
+        ||square[nums + checker].classList.contains("wqueen")
+        ||square[nums + checker].classList.contains("wknight")
+        ||square[nums + checker].classList.contains("wking")){
             i = 8
             Adder(count)
             break;
         }
         if(square[nums + checker].classList.contains("bpawn")
         ||square[nums + checker].classList.contains("brook")
-        ||square[nums+checker].classList.contains("bbishop")){
+        ||square[nums + checker].classList.contains("bbishop")
+        ||square[nums + checker].classList.contains("bqueen")
+        ||square[nums + checker].classList.contains("bknight")
+        ||square[nums + checker].classList.contains("bking")){
             count++
             i = 8
             Adder(count)
@@ -73,8 +82,11 @@ function bishopw(num){
         }
         if(nums - checker2 == 0|| nums - checker2 == 8||nums - checker2 == 16|| nums - checker2 ==24|| nums - checker2 ==32|| nums - checker2 ==40|| nums - checker2 ==48|| nums - checker2 == 56){
             if(square[nums - checker2].classList.contains("wpawn")
-            ||square[nums - checker2].classList.contains("wrook")
-            ||square[nums - checker2].classList.contains("wbishop")){
+        ||square[nums - checker2].classList.contains("wrook")
+        ||square[nums - checker2].classList.contains("wbishop")
+        ||square[nums - checker2].classList.contains("wqueen")
+        ||square[nums - checker2].classList.contains("wknight")
+        ||square[nums - checker2].classList.contains("wking")){
                 j = 8
                 Adder2(count2)
                 break;
@@ -87,14 +99,20 @@ function bishopw(num){
         }
         if(square[nums - checker2].classList.contains("wpawn")
         ||square[nums - checker2].classList.contains("wrook")
-        ||square[nums - checker2].classList.contains("wbishop")){
+        ||square[nums - checker2].classList.contains("wbishop")
+        ||square[nums - checker2].classList.contains("wqueen")
+        ||square[nums - checker2].classList.contains("wknight")
+        ||square[nums - checker2].classList.contains("wking")){
             j = 8
             Adder2(count2)
             break;
         }
         if(square[nums - checker2].classList.contains("bpawn")
         ||square[nums - checker2].classList.contains("brook")
-        ||square[nums-checker2].classList.contains("bbishop")){
+        ||square[nums - checker2].classList.contains("bbishop")
+        ||square[nums - checker2].classList.contains("bqueen")
+        ||square[nums - checker2].classList.contains("bknight")
+        ||square[nums - checker2].classList.contains("bking")){
             count2++
             j = 8
             Adder2(count2)
@@ -127,8 +145,11 @@ function bishopw2(num){
         }
         if(nums + checker == 7|| nums + checker == 8+ 7||nums + checker == 16+7|| nums + checker ==24 +7|| nums + checker ==32 +7|| nums + checker ==40 +7|| nums + checker ==48 +7|| nums + checker == 56+7){
             if(square[nums + checker].classList.contains("wpawn")
-            ||square[nums + checker].classList.contains("wrook")
-            ||square[nums + checker].classList.contains("wbishop")){
+        ||square[nums + checker].classList.contains("wrook")
+        ||square[nums + checker].classList.contains("wbishop")
+        ||square[nums + checker].classList.contains("wqueen")
+        ||square[nums + checker].classList.contains("wknight")
+        ||square[nums + checker].classList.contains("wking")){
                 i = 8
                 Adder3(count)
                 break;
@@ -141,7 +162,10 @@ function bishopw2(num){
         }
         if(square[nums + checker].classList.contains("wpawn")
         ||square[nums + checker].classList.contains("wrook")
-        ||square[nums + checker].classList.contains("wbishop")){
+        ||square[nums + checker].classList.contains("wbishop")
+        ||square[nums + checker].classList.contains("wqueen")
+        ||square[nums + checker].classList.contains("wknight")
+        ||square[nums + checker].classList.contains("wking")){
            
             i = 8
             Adder3(count)
@@ -149,7 +173,10 @@ function bishopw2(num){
         }
         if(square[nums + checker].classList.contains("bpawn")
         ||square[nums + checker].classList.contains("brook")
-        ||square[nums+checker].classList.contains("bbishop")){
+        ||square[nums + checker].classList.contains("bbishop")
+        ||square[nums + checker].classList.contains("bqueen")
+        ||square[nums + checker].classList.contains("bknight")
+        ||square[nums + checker].classList.contains("bking")){
             count++
             i = 8
             Adder3(count)
@@ -171,8 +198,11 @@ function bishopw2(num){
         }
         if(nums - checker2 == 7|| nums - checker2 == 8+ 7||nums - checker2 == 16+7|| nums - checker2 ==24 +7|| nums - checker2 ==32 +7|| nums - checker2 ==40 +7|| nums - checker2 ==48 +7|| nums - checker2 == 56+7){
             if(square[nums - checker2].classList.contains("wpawn")
-            ||square[nums - checker2].classList.contains("wrook")
-            ||square[nums - checker2].classList.contains("wbishop")){
+        ||square[nums - checker2].classList.contains("wrook")
+        ||square[nums - checker2].classList.contains("wbishop")
+        ||square[nums - checker2].classList.contains("wqueen")
+        ||square[nums - checker2].classList.contains("wknight")
+        ||square[nums - checker2].classList.contains("wking")){
                 j = 8
                 Adder4(count2)
                 break;
@@ -185,14 +215,20 @@ function bishopw2(num){
         }
         if(square[nums - checker2].classList.contains("wpawn")
         ||square[nums - checker2].classList.contains("wrook")
-        ||square[nums - checker2].classList.contains("wbishop")){
+        ||square[nums - checker2].classList.contains("wbishop")
+        ||square[nums - checker2].classList.contains("wqueen")
+        ||square[nums - checker2].classList.contains("wknight")
+        ||square[nums - checker2].classList.contains("wking")){
             j = 8
             Adder4(count2)
             break;
         }
         if(square[nums - checker2].classList.contains("bpawn")
         ||square[nums - checker2].classList.contains("brook")
-        ||square[nums-checker2].classList.contains("bbishop")){
+        ||square[nums - checker2].classList.contains("bbishop")
+        ||square[nums - checker2].classList.contains("bqueen")
+        ||square[nums - checker2].classList.contains("bknight")
+        ||square[nums - checker2].classList.contains("bking")){
             count2++
             j = 8
             Adder4(count2)
@@ -248,6 +284,9 @@ function move() {
     square[where].classList.remove("brook")
     square[where].classList.remove("bbishop")
     square[where].classList.remove("bpawn")
+    square[where].classList.remove("bking")
+    square[where].classList.remove("bknight")
+    square[where].classList.remove("bqueen")
         changeTurn("black")
     bishopDebuger2()
 }

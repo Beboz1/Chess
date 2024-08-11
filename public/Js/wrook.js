@@ -1,4 +1,5 @@
 import{square, where, turn, changeTurn}from"./index.js"
+let wrookMoves = 0
 let nums = 0
 let nums2 = 0
 function wrookDebuger() {
@@ -242,7 +243,8 @@ function move() {
     square[where].classList.remove("bking")
     square[where].classList.remove("bqueen")
     square[where].classList.remove("bknight")
+    wrookMoves++
     changeTurn("black")
     wrookDebuger()
 }
-export{rookwh,rookwv,wrookDebuger}
+export{rookwh,rookwv,wrookDebuger, wrookMoves}
