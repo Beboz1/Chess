@@ -3,6 +3,8 @@ import{wrookMoves}from"./wrook.js"
 let moves = 0
 let nums
 function kingDebuger2(){
+    square[62].removeEventListener("click", castleShort)
+    square[58].removeEventListener("click", castleLong)
     let x = 0
     while(x<64){
         square[x].removeEventListener("click",move)
@@ -172,8 +174,8 @@ function castleLong(){
     square[56].classList.remove("wrook")
     square[58].classList.add("wking")
     square[59].classList.add("wrook")
-    kingDebuger()
-    changeTurn2("black")
+    kingDebuger2()
+    changeTurn("black")
     moves++
 }
 export{
